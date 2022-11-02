@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h4><strong>Rellena tu CV</strong></h4>
+    <form action="" method="post">
+        Nombre
+        <br>
+        <input type="text" name="nombre" value="" />
+        <br>
+        Apellidos
+        <br>
+        <input type="text" name="nombre" value="" />
+        <br>
+        Contraseña
+        <br>
+        <input type="password" name="nombre" value="" />
+        <br>
+        Confirme contraseña
+        <br>
+        <input type="password" name="nombre" value="" />
+        <br>
+        Identificación
+        <br/>
+        <select name="select">
+            <option value="CC">CC</option>
+            <option value="TI" selected>TI</option>
+            <option value="CE">CE</option>
+        </select>
+        <input type="text" name="idsuj" value="" size="10" maxlength="9" />
+        <br>
+        Sexo 
+        <br>
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+        <br>
+        <input type="radio" name="sexo" value="mujer" /> Mujer
+        <br>
+        Incluir mi foto
+        <br>
+        <input type="file" name="foto"/>
+        <br>
+        <input name="Estudiante" type="checkbox" value="Estudiante" checked="checked"/>
+        Estudiante
+    </form>
+
+    <form action="maneja_formulario.php" method="post">
+        <fieldset>
+        <legend>Datos personales</legend>
+        Departamento 
+        <br>
+        <select name="select">
+            <option value="Seleccione" selected>Seleccione</option>   
+        </select>
+        <br>
+        Fecha de nacimiento 
+        <br>
+        <input type="text" name="dia" value="" /> de
+        <select name="select">
+            <option value="Enero" selected>Enero</option>
+        </select> del
+        <input type="text" name="año" value="" />
+        <br>
+        Temas de interes
+        <br>
+        <select name="select1">
+            <option value="Seleccione" selected>Seleccione</option>
+            <option value="bdd">Administracion de bases de datos</option>
+            <option value="bdd">Análisis y programación</option>
+            <option value="bdd">Arquitectura</option>
+            <option value="bdd">Calidad</option>   
+            <option value="bdd">ERP, CRM, Bussines Intelligence</option>
+        </select>
+        </fieldset>
+
+        <input type="submit" value="Guardar cambios" />
+        <input type="submit" value="Borrar los datos introducidos" />
+
+
+</body>
+</html>
